@@ -22,3 +22,10 @@ urlpatterns = [
     path('api/v1/', include("post_app.urls")),
     # path('api/v1/', include("comment_app.urls")),
 ]
+
+# urlpatterns = [
+#     path('posts/', AllPosts.as_view()),
+#     path('posts/<int:post_id>/', PostDetail.as_view()),
+#     path('posts/<int:post_id>/comments/', PostComments.as_view()),
+#     path('posts/<int:post_id>/comments/<int:comment_id>/', CommentDetail.as_view()),
+# ]
