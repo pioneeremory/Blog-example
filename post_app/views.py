@@ -14,7 +14,7 @@ class AllPosts(APIView):
 
 class PostDetail(APIView):
     def get(self, request, post_id):
-        post = Posts.objects.get(id=post_id)
+        post = Posts.objects.get(post_id=post_id)
         serializer = PostsSerializer(post)
         return Response(serializer.data)
 

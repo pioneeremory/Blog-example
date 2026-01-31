@@ -16,3 +16,6 @@ class PostsSerializer(serializers.ModelSerializer):
         model = Posts
         fields = ("title", "post_author", "date_created", "body", "comments")
         # comments are accesed via the related_name we setup in models
+
+# endpoint for retrieving comments of a specific post
+
